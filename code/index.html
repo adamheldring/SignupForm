@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <title>Adam's Forms Assigment - Sprint1 180913</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./spotify-logo.png" alt="">
+      </div>
+      <div class="content">
+        <div class="register-ways">
+          <a id="facebook-button">REGISTRERA DIG MED FACEBOOK</a>
+          <p id="eller">eller</p>
+          <p id="register-text">Registrera dig med din e-postadress</p>
+        </div>
+        <form class="submit-form" action="http://httpbin.org/anything" method="post">
+          <div class="field">
+            <input type="email" name="email" value="E-postadress">
+          </div>
+          <div class="field">
+            <input type="email" name="confirm" value="Bekräfta e-postadressen">
+          </div>
+          <div class="field">
+            <input type="password" name="password" value="Lösenord">
+          </div>
+          <div class="field">
+            <input type="text" name="username" value="Vad ska vi kalla dig?">
+          </div>
+          <div class="field">
+            <label>
+              Födelsedatum:<br>
+              <div class="birth-container">
+                <input type="text" name="birth-year" value="År" class="birthday year">
+                <input type="text" name="birth-month" value="Månad" class="birthday month">
+                <input type="text" name="birth-day" value="Dag" class="birthday day">
+              </div>
+            </label>
+          </div>
+          <div class="field">
+            <input type="radio" name="gender" value="man" class="radio"><label for="gender">Man</label>
+            <input type="radio" name="gender" value="woman" class="radio"><label for="gender">Kvinna</label>
+            <input type="radio" name="gender" value="non-binary" class="radio"><label for="gender">Icke-binär</label>
+          </div>
+          <div class="field">
+            <input type="checkbox" name="terms" value="man"><label for="terms" class="terms">Dela min registreringsinformation med Spotifys
+              innehållsleverantörer för marknadsföringsändamål. Tänk på att din information kan överföras till ett land utanför EEA enligt
+              beskrivningen i vår integritetspolicy.</label>
+          </div>
+          <input type="submit" name="submit" value="REGISTRERA DIG" class="button">
+        </form>
+
+    </div>
+
+
+    </div>
+  </body>
+</html>

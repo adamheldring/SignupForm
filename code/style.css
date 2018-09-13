@@ -1,0 +1,135 @@
+/* Adam's styles for forms assignment */
+
+body {
+  box-sizing: border-box;
+  background: white;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+
+}
+.header {
+  padding-top: 24px;
+  padding-bottom: 20px;
+  text-align: center;
+  /* background: pink; */
+  border-bottom: 1px solid rgb(223,224,230);
+}
+.header img {
+  height: 59px;
+}
+.register-ways {
+  padding-top: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1c1c1f;
+}
+#facebook-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: #fff;
+  background: #3B5998;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  padding: 16px 48px 18px;
+
+  max-width: 320px;
+  min-width: 160px;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 4px;
+
+  letter-spacing: 2.5px;
+  min-width: 160px;
+}
+#eller {
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: #fff;
+  position:relative;
+  top:8px;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+#register-text {
+  margin-top: 0px;
+  border-top: 1px solid rgb(223,224,230);
+  padding-top: 10px;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+}
+.content {
+  width: 430px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #88898c;
+  font-size: 14px;
+  /* background: yellow; */
+}
+input {
+  width: 100%;
+  border: 1px, solid, rgb(223,224,230);
+  color: #88898c;
+  /* padding: 0px; */
+  box-sizing : border-box;
+  height: 48px;
+  padding: 0 .75em;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.2;
+
+  }
+.field {
+  width: 100%;
+  margin: 0px;
+}
+.radio {
+  display: inline;
+  background: blue;
+}
+
+.field .radio {
+  display: inline;
+  background: green;
+  width: 100px;
+}
+.field label {
+  display: inline;
+  background: green;
+  width: 100px;
+}
+.birth-container {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0px;
+  width: 100%;
+  /* background: green; */
+  justify-content: space-between;
+}
+.birthday {
+  /* background: pink; */
+}
+.birthday.year {
+  width: 25%;
+}
+.birthday.month {
+  width: 44%;
+}
+.birthday.day {
+  width: 20%;
+}
+.terms {
+
+}
+.button {
+
+}
