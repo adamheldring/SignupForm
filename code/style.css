@@ -6,15 +6,13 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: 'Roboto', sans-serif;
-}
-.container {
-
+  font-size: 16px;
+  font-weight: 400;
 }
 .header {
   padding-top: 24px;
   padding-bottom: 20px;
   text-align: center;
-  /* background: pink; */
   border-bottom: 1px solid rgb(223,224,230);
 }
 .header img {
@@ -27,26 +25,39 @@ body {
   font-size: 18px;
   color: #1c1c1f;
 }
-#facebook-button {
+.button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
   color: #fff;
-  background: #3B5998;
-  font-size: 14px;
-  line-height: 1;
-  border-radius: 500px;
-  padding: 16px 48px 18px;
-
   max-width: 320px;
   min-width: 160px;
   margin-left: 55px;
   margin-right: 55px;
-  margin-bottom: 4px;
-
   letter-spacing: 2.5px;
   min-width: 160px;
+  border-radius: 500px;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+#facebook-button {
+  background: #3B5998;
+  padding: 16px 48px 18px;
+  margin-bottom: 4px;
+  overflow: visible;
+}
+a#facebook-button:hover {
+  background: #3a61b3;
+}
+#register-button {
+  background: #1DB954;
+  margin-top: 20px;
+  border: none;
+}
+input#register-button:hover {
+  background: #1ED760;
 }
 #eller {
   display: inline;
@@ -56,15 +67,15 @@ body {
   position:relative;
   top:8px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 0px;
 }
 #register-text {
   margin-top: 0px;
   border-top: 1px solid rgb(223,224,230);
   padding-top: 10px;
-  font-weight: 900;
-  letter-spacing: 0.2px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
 }
 .content {
   width: 430px;
@@ -72,51 +83,88 @@ body {
   margin-right: auto;
   color: #88898c;
   font-size: 14px;
-  /* background: yellow; */
 }
-input {
+input,
+select {
   width: 100%;
   border: 1px, solid, rgb(223,224,230);
-  color: #88898c;
-  /* padding: 0px; */
+  color: #1c1c1f;
   box-sizing : border-box;
   height: 48px;
   padding: 0 .75em;
   margin-bottom: 15px;
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: -0.2;
-
+  letter-spacing: -0.2px;
   }
+
+/* Makes the placeholder text a brighter grey on focus, like the original Spotify form. */
+input::placeholder {
+  color: #88898c
+  -webkit-transition: color 1s; /* Safari fix */
+  transition: color 1s;
+}
+input:focus::placeholder {
+  color: rgba(136,137,140,0.6);
+}
+select.birthday {
+  color: #88898c;
+  position: relative;
+  border-radius: none;
+  border-color: rgb(223,224,230);
+  background: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+/* Gets rid of little arrows on type-number inputs */
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 .field {
   width: 100%;
   margin: 0px;
 }
-.radio {
+.field .gender {
   display: inline;
-  background: blue;
+  width: auto;
+  height: auto;
+  float: left;
+  font-size: 14px;
+  margin-top: 12px;
+  letter-spacing: 0.2px;
 }
-
-.field .radio {
-  display: inline;
-  background: green;
-  width: 100px;
+label.gender {
+  margin-left: 2px;
+  margin-right: 22px;
 }
-.field label {
-  display: inline;
-  background: green;
-  width: 100px;
+#terms-block {
+  clear: left;
+  display:flex;
+}
+.field .terms {
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 12px;
+  letter-spacing: 0.2px;
+}
+.field label.terms {
+  float: left;
+  width: auto;
+}
+.birth-outer {
+  margin-top: 10px;
 }
 .birth-container {
+  position: relative;
   display: flex;
   box-sizing: border-box;
   margin: 0px;
   width: 100%;
-  /* background: green; */
   justify-content: space-between;
-}
-.birthday {
-  /* background: pink; */
 }
 .birthday.year {
   width: 25%;
@@ -124,12 +172,22 @@ input {
 .birthday.month {
   width: 44%;
 }
+#month-picker-arrow {
+  position: absolute;
+  top: 20px;
+  left: 285px;
+}
 .birthday.day {
   width: 20%;
 }
-.terms {
 
-}
-.button {
+@media (max-width: 768px) {
+  .header {
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+  .header img {
+    height: 38px;
+  }
 
 }
